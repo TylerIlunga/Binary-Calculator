@@ -15,13 +15,12 @@
  }
 
  while(x > 0) {
-  output += x % 2 === 0 ? '0' : '1';
-  x = Math.floor(x / 2); 
+    output += x % 2 === 0 ? '0' : '1';
+    x = Math.floor(x / 2); 
  }
 
  if (output.length < bits) {
      let zeros = bits - output.length;
-     console.log('zeros', zeros);
      while (zeros > 0) {
          output += '0';
          zeros -= 1;
